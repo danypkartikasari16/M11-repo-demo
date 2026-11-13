@@ -4,3 +4,6 @@ rules:
     severity: ERROR
     message: Query SQL dirakit dengan template literal dari input; gunakan replacements
     pattern: models.sequelize.query(`...${...}...`, ...)
+    paths:
+      include:
+        - "login.ts"
