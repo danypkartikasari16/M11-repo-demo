@@ -1,0 +1,6 @@
+rules:
+  - id: juice-shop-sqli-login
+    languages: [typescript]
+    severity: ERROR
+    message: Query SQL dirakit dengan template literal dari input; gunakan replacements
+    pattern: models.sequelize.query(`...${...}...`, ...)
